@@ -15,9 +15,10 @@
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="#">Accueil</a></li>
+                <li><a href="accueil.html">Accueil</a></li>
                 <li><a href="register.html">S'inscrire</a></li>
-                <li><a href="#">Missions</a></li>
+                <li><a href="missions.html">Missions</a></li>
+                <li><a href="#">Administrateur</a></li>
             </ul>
         </nav>
     </header>
@@ -29,8 +30,8 @@
                 <input type="text" name="pseudo" placeholder="Pseudo" required />
                 <input type="email" name="email" placeholder="Email" required/>
                 <div class="mdp">
-                    <input type="password" name="password" placeholder="Mot de passe" required/>
-                    <i class="fa-solid fa-eye"></i>
+                    <input type="password" name="password" placeholder="Mot de passe" id="password" required/>
+                    <i class="fa-solid fa-eye-slash" id="eye"></i>
                 </div>
             </div>
         
@@ -49,8 +50,9 @@
     </div>
     
     <footer>
-        <img src="../assets/img/logo-3wa.png" alt="logo 3W Academy"></img>
+       <img src="../assets/img/logo.png" alt="logo" class="logo"></img>
     </footer>
     
+    <script type="text/javascript" src="../js/psswrdToggle.js"></script>
 </body>
 </html>
