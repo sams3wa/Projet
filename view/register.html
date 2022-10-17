@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page d'enregistrement</title>
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/2fa1ea1d7f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="register.html">S'inscrire</a></li>
+                <li><a href="missions.html">Missions</a></li>
+                <li><a href="#">Administrateur</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="container">
+        <form  class="login" action="verification.php" method="POST">
+            <h1>Créer un compte</h1>
+            <div class="inputs">
+                <label for="">Entrez un pseudo</label>
+                <input type="text" name="pseudo" placeholder="Pseudo" required/>
+                
+                <label for="">Entrez votre adresse email</label>
+                <input type="email" name="email" placeholder="Email" required/>
+                
+                <label for="">Entrez un mot de passe</label>
+                <div class="mdp">
+                    <input type="password" name="password" placeholder="Mot de passe" id="password" required/>
+                    <i class="fa-solid fa-eye-slash" id="eye"></i>
+                </div>
+                
+                <label for="">Confirmez le mot de passe</label>
+                <input type="password" name="password" placeholder="Confirmez le mot de passe" required/>
+            </div>
+        
+            <div>
+                <input type="submit" class="register" id="submit" name="inscription" value="Je m'inscris">
+            </div>
+        </form>
+    </div>
+    
+    <footer>
+       <img src="../assets/img/logo.png" alt="logo" class="logo"></img>
+    </footer>
+    
+    <script type="text/javascript" src="../assets/js/psswrdToggle.js"></script>
+</body>
+</html>

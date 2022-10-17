@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito&display=swap');
+
+body {
+    padding:0;
+    margin:0;
+    font-family: 'Nunito',sans-serif;
+    /*background-image: linear-gradient(#F20CCC, #F2E30F, #f63);*/
+}
+
+#container{
+    width: 100vw;
+    margin-top: 15px;
+    margin-bottom: 5em;
+}
+
+/*CSS LOGIN*/
+
+.login{
+    align-items: center;
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    background-color: white;
+    padding: 5px 25px;
+}
+
+.login h1{
+    text-align: center;
+    font-size: 25px;
+    color: #e73827;
+    margin-bottom: 8px;
+}
+
+label{
+    font-size: 12px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.mdp{
+    width: 100%;
+    position: relative;
+}
+
+.mdp input{
+    width: 94%;
+}
+
+.mdp i{
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #e73827;
+}
+
+.fa-eye { 
+    content:'\f070';
+}
+
+.fa-eye-slash {
+    content:'\f06e';
+}
+
+.login .inputs input[type="text"], input[type="email"], input[type="password"]{
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #e73827;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.inscription{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+#submit{
+    padding: 10px;
+    background-color: #e73827;
+    width: 150px;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    filter: brightness(1.5);
+}
+
+.register{
+    margin-top: 20px;
+    margin-left: 8em;
+}
+
+.submit_choice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.connect{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.connect a{
+    text-decoration: none;
+    color: #e73827;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.connect a:hover{
+    color: #757272;
+    transition: all;
+}
+
+.subscribe{
+    margin-left: 20px;
+    width: 50%;
+}
+
+.subscribe a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*CSS NAVBAR*/
+
+.navbar {
+    position:sticky;
+    top:0;
+    background-color: #e73827;
+    border: 1px solid #e73827;
+    width: 100vw;
+}
+
+ul {
+  list-style-type: none;
+    padding: 12px;
+}
+
+
+
+li {
+  display: inline;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+li a {
+  color: white;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+
+.navbar a:hover, .navbar a:focus {
+    text-decoration: none;
+    color: #e73827;
+    background-color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+
+
+/*CSS FORM*/
+
+.form {
+    margin:3em;
+    text-align:center;
+}
+
+.form h1{
+    color: #e73827;
+}
+
+textarea {
+    
+    width:80%;
+    height:auto;
+    box-shadow: 0.5em 0.5em 2em grey;
+    /*background-image: linear-gradient(#8C5C51, #93A64E, #F23E16);*/
+    
+}
+
+
+#name {
+    width:80%;
+    height:auto;
+    margin:2em;
+    padding:0.5em 0.25em;
+    /*background-image: linear-gradient(90deg, #8C5C51, #93A64E, #F23E16);*/
+}
+
+/*.submit {*/
+/*    margin-top:1em;*/
+/*    padding:0.5em 2em;*/
+/*    border-radius:1em;*/
+/*    border: 1px solid #44803F;*/
+/*    background-color:#44803F;*/
+/*    color:white;*/
+/*}*/
+
+/*.submit:hover {*/
+/*    background-color : white;*/
+/*    color:black;*/
+/*    cursor:pointer;*/
+/*}*/
+
+/* CSS ACCUEIL */
+
+.accueil {
+    text-align:center;
+    margin:2em;
+}
+
+.card {
+    display:inline-block;
+    text-align:center;
+    background-color:white;
+    width:35%;
+    padding:2em;
+    margin:1em;
+    border: solid 3px #e73827;
+    border-radius:2em;
+}
+
+.redirAcc {
+    text-decoration:none;
+    color:#e73827;
+}
+
+
+
+/*CSS FOOTER*/
+
+footer{
+    width: 98vw;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0.5em;
+    text-align: center;
+    border: 3px solid #e73827;
+    border-radius: 5px;
+}
+
+.logo {
+    width:10em;
+    height:auto;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 365px){
+    nav{
+        width: 100vw;
+    }
+    li{
+    font-size: 12px;
+    }    
+}
+
+@media screen and (max-width: 244px){
+    nav{
+        width: 100vw;
+    }
+    li{
+    font-size: 12px;
+    }    
+}
