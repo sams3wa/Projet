@@ -3,44 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Missions</title>
-    <link rel="stylesheet" href="../assets/css/styleMission.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
 </head>
 <body>
     
     <!--NAVBAR-->
     
     <nav class="navbar">
-    <div class="" id="">
-      <ul class="">
-        <li>
-          <p class="">Super site</p>
-        </li>
-        <li class="btn">
-          <a class="" aria-current="page" href="#">Accueil</a>
-        </li>
-        <li class="btn">
-          <a class="" href="#">Missions</a>
-        </li>
-        <li class="btn">
-          <a class="" href="#">Profil</a>
-        </li>
-      </ul>
-    </div>
-</nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="register.html">S'inscrire</a></li>
+                <li><a href="#">Missions</a></li>
+            </ul>
+    </nav>
     
     <!--CREATION DE MISSION-->
     
     <form method='POST' class="form">
-        <fieldset>
-            <legend>Création de mission</legend>
+        <h1>Création de mission</h1>
             <div>
             <input type="text" name="name" placeholder="Nom de la mission..." id="name" required/>
             </div>
             <textarea id="mission" name="mission" rows="20" cols="30" placeholder="Descriptif de mission..." required></textarea>
             <div>
-                <input type="submit" value="Créer !" class="submit"/>
+                <input type="submit" value="Créer !" id="submit"/>
             </div>
-        </fieldset>
+        
     </form>
     
 <footer class="footer">
