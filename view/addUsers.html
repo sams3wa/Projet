@@ -1,0 +1,24 @@
+<form method="POST">
+
+    <?php foreach ( $errors as $error ): ?>
+        <p> <?= htmlentities($error) ?></p>
+    <?php endforeach ?>
+
+    <fieldset>
+        <legend> register </legend>
+        
+        <label for="name"> nom </label>
+        <input type="text" name="name" id="name" value="<?= htmlentities($reg->getName()) ?> ">
+        
+        
+        <label for="email"> email </label>
+        <input type="email" name="email" id="email" value="<?= htmlentities($reg->getEmail()) ?> ">
+        
+        
+        <label for="password"> mot de passe </label>
+        <input type="password" name="password" id="password" value="<?= htmlentities($reg->getPassword()) ?> ">
+        
+    </fieldset>
+
+    <button type="submit"> Validé </button>
+</form>
