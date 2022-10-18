@@ -61,8 +61,12 @@ label{
     color: #e73827;
 }
 
-.mdp i::before{
+.fa-eye { 
     content:'\f070';
+}
+
+.fa-eye-slash {
+    content:'\f06e';
 }
 
 .login .inputs input[type="text"], input[type="email"], input[type="password"]{
@@ -204,20 +208,45 @@ textarea {
     /*background-image: linear-gradient(90deg, #8C5C51, #93A64E, #F23E16);*/
 }
 
-.submit {
-    margin-top:1em;
-    padding:0.5em 2em;
-    border-radius:1em;
-    border: 1px solid #44803F;
-    background-color:#44803F;
-    color:white;
+/*.submit {*/
+/*    margin-top:1em;*/
+/*    padding:0.5em 2em;*/
+/*    border-radius:1em;*/
+/*    border: 1px solid #44803F;*/
+/*    background-color:#44803F;*/
+/*    color:white;*/
+/*}*/
+
+/*.submit:hover {*/
+/*    background-color : white;*/
+/*    color:black;*/
+/*    cursor:pointer;*/
+/*}*/
+
+/* CSS ACCUEIL */
+
+.accueil {
+    text-align:center;
+    margin:2em;
 }
 
-.submit:hover {
-    background-color : white;
-    color:black;
-    cursor:pointer;
+.card {
+    display:inline-block;
+    text-align:center;
+    background-color:white;
+    width:35%;
+    padding:2em;
+    margin:1em;
+    border: solid 3px #e73827;
+    border-radius:2em;
 }
+
+.redirAcc {
+    text-decoration:none;
+    color:#e73827;
+}
+
+
 
 /*CSS FOOTER*/
 
@@ -228,13 +257,19 @@ footer{
     margin-left: auto;
     margin-bottom: 0.5em;
     text-align: center;
-    border: 1px solid #e73827;
+    border: 3px solid #e73827;
     border-radius: 5px;
 }
+
 
 footer p{
     background-color: #e73827;
     color: white;
+
+.logo {
+    width:10em;
+    height:auto;
+
 }
 
 /*RESPONSIVE*/

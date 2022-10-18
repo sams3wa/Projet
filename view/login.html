@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page de connexion</title>
-    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../../Projet-main/assets/css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2fa1ea1d7f.js" crossorigin="anonymous"></script>
 </head>
@@ -15,10 +15,16 @@
     <header>
         <nav class="navbar">
             <ul>
+
                 <li><a href="#">Accueil</a></li>
                 <li><a href="register.html">S'inscrire</a></li>
                 <li><a href="#">Mon profil</a></li>
                 <li><a href="#">Missions</a></li>
+
+                <li><a href="../../Projet-main/view/accueil.html">Accueil</a></li>
+                <li><a href="../../Projet-main/view/register.html">S'inscrire</a></li>
+                <li><a href="../../Projet-main/view/missions.html">Missions</a></li>
+
                 <li><a href="#">Administrateur</a></li>
             </ul>
         </nav>
@@ -32,8 +38,8 @@
                 <input type="text" name="pseudo" placeholder="Pseudo" required />
                 <input type="email" name="email" placeholder="Email" required/>
                 <div class="mdp">
-                    <input type="password" name="password" placeholder="Mot de passe" required/>
-                    <i class="fa-solid fa-eye"></i>
+                    <input type="password" name="password" placeholder="Mot de passe" id="password" required/>
+                    <i class="fa-solid fa-eye-slash" id="eye"></i>
                 </div>
             </div>
     <!--Boutons de connexion et de souscription-->    
@@ -45,7 +51,7 @@
             
                 <div class="subscribe">
                     <p class="inscription">Je n'ai pas de compte.</p>
-                    <button id="submit"><a href="register.html">Je crée un compte</a></button>
+                    <button id="submit"><a href="../../Projet-main/view/register.html">Je crée un compte</a></button>
                 </div>
             </div>
         </form>
@@ -53,8 +59,9 @@
     
     <!--FOOTER-->
     <footer>
-        <img src="../assets/img/logo-3wa.png" alt="logo 3W Academy"></img>
+       <img src="../../Projet-main/assets/img/logo.png" alt="logo" class="logo"></img>
     </footer>
     
+    <script type="text/javascript" src="../../Projet-main/assets/js/psswrdToggle.js"></script>
 </body>
 </html>

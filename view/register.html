@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Page d'enregistrement</title>
-    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../../Projet-main/assets/css/style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/2fa1ea1d7f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -11,10 +12,16 @@
     <header>
         <nav class="navbar">
             <ul>
+
                 <li><a href="#">Accueil</a></li>
                 <li><a href="login.html">Se connecter</a></li>
                 <li><a href="#">Mon profil</a></li>
                 <li><a href="#">Missions</a></li>
+
+                <li><a href="../../Projet-main/view/accueil.html">Accueil</a></li>
+                <li><a href="register.html">S'inscrire</a></li>
+                <li><a href="missions.html">Missions</a></li>
+
                 <li><a href="#">Administrateur</a></li>
             </ul>
         </nav>
@@ -31,7 +38,10 @@
                 <input type="email" name="email" placeholder="Email" required/>
                 
                 <label for="">Entrez un mot de passe</label>
-                <input type="password" name="password" placeholder="Mot de passe" required/>
+                <div class="mdp">
+                    <input type="password" name="password" placeholder="Mot de passe" id="password" required/>
+                    <i class="fa-solid fa-eye-slash" id="eye"></i>
+                </div>
                 
                 <label for="">Confirmez le mot de passe</label>
                 <input type="password" name="password" placeholder="Confirmez le mot de passe" required/>
@@ -44,8 +54,13 @@
     </div>
     
     <footer>
+
         <img src="../assets/img/logo-3wa.png" alt="logo 3W Academy" />
+
+       <img src="../../Projet-main/assets/img/logo.png" alt="logo" class="logo"></img>
+
     </footer>
     
+    <script type="text/javascript" src="../../Projet-main/assets/js/psswrdToggle.js"></script>
 </body>
 </html>
