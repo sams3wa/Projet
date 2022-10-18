@@ -1,4 +1,7 @@
+
+
 /*GENERALITES*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito&display=swap');
 
@@ -149,6 +152,9 @@ label{
 }
 
 ul {
+
+    list-style-type: none;
+
   list-style-type: none;
     padding: 12px;
 }
@@ -156,7 +162,19 @@ ul {
 
 
 li {
-  display: inline;
+    display: inline;
+    margin-right:auto;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 13px;
+    box-sizing: border-box;
+    display: inline;
     padding: 12px;
 }
 
@@ -175,6 +193,12 @@ li a {
     padding-top: 2em;
     padding-bottom: 2em;
 }
+
+li:last-child {
+    float:right;
+    padding:0;
+}
+
 
 
 
@@ -261,6 +285,10 @@ footer{
     border-radius: 5px;
 }
 
+
+.logo {
+    width:10em;
+    height:auto;
 
 footer p{
     background-color: #e73827;

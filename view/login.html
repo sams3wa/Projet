@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page de connexion</title>
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="../../Projet-main/assets/css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2fa1ea1d7f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="login.html">S'inscrire</a></li>
+                <li><a href="missions.html">Missions</a></li>
+                <li><a href="#">Administrateur</a></li>
+                <li class="icon"><a href="profil.html"><i class="fa-solid fa-user fa-2xl"></i></a></li>
    <!--Barre de navigation-->
     <header>
         <nav class="navbar">
@@ -42,6 +52,7 @@
                     <i class="fa-solid fa-eye-slash" id="eye"></i>
                 </div>
             </div>
+
     <!--Boutons de connexion et de souscription-->    
             <div class="submit_choice">
                 <div class="connect">
@@ -51,12 +62,18 @@
             
                 <div class="subscribe">
                     <p class="inscription">Je n'ai pas de compte.</p>
+                    <button id="submit"><a href="register.html">Je crée un compte</a></button>
                     <button id="submit"><a href="../../Projet-main/view/register.html">Je crée un compte</a></button>
                 </div>
             </div>
         </form>
     </div>
     
+    <footer>
+       <img src="../assets/img/logo.png" alt="logo" class="logo"></img>
+    </footer>
+    
+    <script type="text/javascript" src="../assets/js/psswrdToggle.js"></script>
     <!--FOOTER-->
     <footer>
        <img src="../../Projet-main/assets/img/logo.png" alt="logo" class="logo"></img>
