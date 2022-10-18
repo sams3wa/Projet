@@ -5,6 +5,6 @@ const AVAILABLE_ROUTES= [
     'login'=>'login.php',
 ];
 
-const DEFAULT_ROUTE = AVAILABLE_ROUTES['register'];
+const DEFAULT_ROUTE = AVAILABLE_ROUTES['login'];
 
 
