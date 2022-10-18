@@ -1,3 +1,8 @@
+
+
+/*GENERALITES*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito&display=swap');
 
 body {
@@ -147,7 +152,10 @@ label{
 }
 
 ul {
+
     list-style-type: none;
+
+  list-style-type: none;
     padding: 12px;
 }
 
@@ -166,6 +174,15 @@ li a {
     list-style-type: none;
     padding: 13px;
     box-sizing: border-box;
+    display: inline;
+    padding: 12px;
+}
+
+li a {
+  color: white;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 13px;
 }
 
 
@@ -185,8 +202,6 @@ li:last-child {
 
 
 
-
-
 /*CSS FORM*/
 
 .form {
@@ -197,6 +212,7 @@ li:last-child {
 .form h1{
     color: #e73827;
 }
+
 
 textarea {
     
@@ -269,9 +285,19 @@ footer{
     border-radius: 5px;
 }
 
+
 .logo {
     width:10em;
     height:auto;
+
+footer p{
+    background-color: #e73827;
+    color: white;
+
+.logo {
+    width:10em;
+    height:auto;
+
 }
 
 /*RESPONSIVE*/
