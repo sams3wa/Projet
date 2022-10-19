@@ -270,6 +270,68 @@ textarea {
     color:#e73827;
 }
 
+/*CSS PROFIL*/
+
+.profile-box{
+    background-color: #e73827;
+    text-align: center;
+    align-items: center;
+    color: white;
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(244, 67, 54, 0.5);
+}
+
+.profile-box i{
+    font-size: 45px;
+}
+
+.profile-box h3{
+    font-size: 18px;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+.profile-box p{
+    font-size: 15px;
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+
+.profile-choice{
+    background-color: white;
+    width: 310px;
+    padding: 10px;
+    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.profile-choice button{
+    border-radius: 100%;
+    border: 5px solid;
+    color: white;
+    width: 85px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #e73827;
+    transition: transform .2s;
+    padding: 5px;
+}
+
+.profile-choice a{
+    color: white;
+    text-decoration: none;
+}
+
+.zoom:hover{
+    transform: scale(1.1); 
+    font-weight: bold;
+}
 
 
 /*CSS FOOTER*/
