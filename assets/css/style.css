@@ -151,8 +151,6 @@ ul {
     padding: 12px;
 }
 
-
-
 li {
     display: inline;
     margin-right:auto;
@@ -167,7 +165,6 @@ li a {
     padding: 13px;
     box-sizing: border-box;
 }
-
 
 .navbar a:hover, .navbar a:focus {
     text-decoration: none;
