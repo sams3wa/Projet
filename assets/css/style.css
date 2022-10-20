@@ -183,10 +183,6 @@ li:last-child {
 }
 
 
-
-
-
-
 /*CSS FORM*/
 
 .form {
@@ -215,21 +211,6 @@ textarea {
     padding:0.5em 0.25em;
     /*background-image: linear-gradient(90deg, #8C5C51, #93A64E, #F23E16);*/
 }
-
-/*.submit {*/
-/*    margin-top:1em;*/
-/*    padding:0.5em 2em;*/
-/*    border-radius:1em;*/
-/*    border: 1px solid #44803F;*/
-/*    background-color:#44803F;*/
-/*    color:white;*/
-/*}*/
-
-/*.submit:hover {*/
-/*    background-color : white;*/
-/*    color:black;*/
-/*    cursor:pointer;*/
-/*}*/
 
 /* CSS ACCUEIL */
 
@@ -316,6 +297,26 @@ textarea {
     transform: scale(1.1); 
     font-weight: bold;
 }
+
+
+/*CSS ADMIN*/
+
+.table {
+    width:100%;
+    border:1px solid #e73827;
+    border-collapse:collapse;
+}
+
+th, tb {
+    border:1px solid #e73827;
+}
+
+.modif, .suppr {
+    width:2em;
+    height:auto;
+    margin:0 0.5em 0 0.5em;
+}
+
 
 
 /*CSS FOOTER*/
