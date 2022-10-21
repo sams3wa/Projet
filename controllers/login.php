@@ -44,13 +44,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
     
         if(password_verify($_POST['password'], $pwd['password'])){
             
-            echo "login reussi";
-        }
         
-        else{
-            echo "login raté";
-            var_dump($pwd);
-        }
     }
     
     
