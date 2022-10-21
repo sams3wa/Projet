@@ -1,9 +1,16 @@
 <?php
 require_once 'models/register.php';
 require_once 'services/db.php';
+require_once 'models/userInfo.php';
+
 
 $errors = [];
 $reg=new register();
+$user= new UsersInfo();
+
+
+
+
 
 if(isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confpassword'])){
     
@@ -36,6 +43,11 @@ if(isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password']
     $reg->setPassword($pwd);
 
     $errors = $reg->validatePassword();
+    
+    
+    
+    
+    
    if($_POST['password']!=$_POST['confpassword']){
         $errors+= ['erreur'=>'Les mots de passe ne coresspondent pas'];
     }
@@ -54,6 +66,17 @@ if(isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password']
         
         $pdoRequest-> bindValue(":password", $motdepasse );
         $pdoRequest->execute();
+        
+        
+        
+        
+        
+        
+        $user->userSetEmail($mail);
+        $user->userSetPassword($pwd);
+        $user->userSetid();
+        $user->userSetPseudo();
+        $user->userSetStatut();
     }
     
     
