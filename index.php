@@ -1,11 +1,7 @@
 <?php
 
-require 'services/db.php';
 require 'services/routing.php';
-require 'view/layout.html';
+require 'layout.html';
 
-$pdoRequest = getConnect();
-$pdoRequest = $pdo->query("SELECT * FROM maximilienmbaye_projetFramework'");
-$pdoRequest -> execute();
 
 

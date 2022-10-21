@@ -12,17 +12,20 @@
 
 <body>
     
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="register.html">S'inscrire</a></li>
-                <li><a href="missions.html">Missions</a></li>
-                <li><a href="#">Administrateur</a></li>
-            </ul>
-        </nav>
-    </header>
     
+    <nav class="navbar">
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="login.html">Se connecter</a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="admin.html">Administrateur</a></li>
+            <li class="icon"><a href="profil.html"><i class="fa-solid fa-user fa-2xl"></i></a></li>
+        </ul>
+    </nav>
+
+
+    
+    <!--Formulaire-->
     <div id="container">
         <form  class="login" action="verification.php" method="POST">
             <h1>Se connecter</h1>
@@ -34,7 +37,8 @@
                     <i class="fa-solid fa-eye-slash" id="eye"></i>
                 </div>
             </div>
-        
+
+    <!--Boutons de connexion et de souscription-->    
             <div class="submit_choice">
                 <div class="connect">
                     <a href="#">Mot de passe oublié ?</a>
@@ -54,5 +58,6 @@
     </footer>
     
     <script type="text/javascript" src="../js/psswrdToggle.js"></script>
+
 </body>
 </html>
